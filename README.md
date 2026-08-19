@@ -1,36 +1,41 @@
-# python-mini-project 1
-import math
+# Python Mini Project 🐍
 
-# Base class
-class Shape:
-    def calculate_area(self):
-        raise NotImplementedError("Subclasses must implement this method.")
+A simple Python project demonstrating **Object-Oriented Programming (OOP)** concepts using geometric shapes.
 
-# Subclass: Circle
-class Circle(Shape):
-    def __init__(self, radius):
-        self.radius = radius
+## 🧠 Concepts
 
-    def calculate_area(self):
-        return math.pi * self.radius ** 2
+* Classes & Objects
+* Inheritance
+* Method Overriding
+* Polymorphism
+* Exception Handling
+* Python `math` module
 
-# Subclass: Rectangle
-class Rectangle(Shape):
-    def __init__(self, width, height):
-        self.width = width
-        self.height = height
+## 📐 Shapes
 
-    def calculate_area(self):
-        return self.width * self.height
+* **Circle** — calculates area using radius
+* **Rectangle** — calculates area using width and height
 
-# List of shape objects
-shapes = [
-    Circle(5),
-    Rectangle(4, 6),
-    Circle(3.5),
-    Rectangle(2, 9)
-]
+The project uses a common `calculate_area()` method for different shape objects, demonstrating **polymorphism**.
 
-# Loop to calculate and print areas
-for shape in shapes:
-    print(f"Area: {shape.calculate_area():.2f}")
+## 🛠️ Technology
+
+* Python
+
+## ▶️ Run
+
+```bash
+python main.py
+```
+
+## 📂 Project Structure
+
+```text
+python-mini-project/
+├── main.py
+└── README.md
+```
+
+## 🎯 Purpose
+
+Created to practice fundamental **Python OOP concepts** and understand how inheritance and polymorphism work.
